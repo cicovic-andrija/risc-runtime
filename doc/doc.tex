@@ -1,0 +1,51 @@
+\documentclass[a4paper,12pt,oneside,titlepage]{article}
+
+% input/output encoding packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc} % T2A for russian
+\usepackage[russian]{babel} % must be loaded after previous two packages
+
+% other packages
+\usepackage{fancyhdr}
+\usepackage{tabu}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[hidelinks,colorlinks=true,linkcolor=black,urlcolor=blue]{hyperref}
+\usepackage[table]{xcolor}
+
+\lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
+\lstset{framextopmargin=50pt,frame=bottomline}
+
+% renewed commands
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+\addto\captionsrussian{
+  \renewcommand{\contentsname}
+    {Sadržaj}
+  \renewcommand{\tablename}
+    {Tabela}
+}
+
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+    % Title page
+    \input{title}
+
+    \rhead{\nouppercase{\leftmark}}
+    \rfoot{\thepage}
+
+    % Contents page.
+    \tableofcontents
+    \newpage
+
+    % Documentation pages.
+    \rfoot{\thepage}
+    \frenchspacing % use one space between sentences
+    \input{body}
+
+\end{document}
+
