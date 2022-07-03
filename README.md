@@ -21,7 +21,7 @@ $ mkdir -p ~/bin/
 $ make
 ```
 
-## Build each program separately
+## Build each tool separately
 
 It is possible to compile each tool separately, using an appropriate
 `make` rule:
