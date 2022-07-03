@@ -31,4 +31,3 @@ clean:
 	$(MAKE) -C $(DOC_DIR) clean
 
 .PHONY: all assembler linker emulator doc clean
-
