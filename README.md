@@ -1,7 +1,5 @@
 # RISC emulator and programming tools
 
-## Brief project description
-
 An implementation of an emulator for an abstract RISC instruction set,
 and a toolchain consisting of an assembler and a linker that can
 compile the specified assembly language and produce a binary file,
@@ -10,12 +8,12 @@ ready to be loaded and executed in the emulator.
 ## Specification
 
 Read the full specification of the project, in Serbian: [ETF_SS](./doc/pdf/doc.pdf)
+
 The specification also contains detailed explanation of the solution.
 
-## Quick installation
+## Quick build
 
-In order to compile and install the entire toolchain, execute the
-following commands:
+In order to compile the entire toolchain, execute the following commands:
 
 ```
 $ git clone https://github.com/cicovic-andrija/virtual-risc-runtime.git
@@ -23,9 +21,9 @@ $ mkdir -p ~/bin/
 $ make
 ```
 
-## Separate installation of each tool
+## Build each program separately
 
-It is possible to install each tool separately, using an appropriate
+It is possible to compile each tool separately, using an appropriate
 `make` rule:
 
 ```
