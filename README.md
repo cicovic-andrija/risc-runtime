@@ -16,7 +16,7 @@ The specification also contains detailed explanation of the solution.
 In order to compile the entire toolchain, execute the following commands:
 
 ```
-$ git clone https://github.com/cicovic-andrija/virtual-risc-runtime.git
+$ git clone https://github.com/cicovic-andrija/risc-runtime.git
 $ mkdir -p ~/bin/
 $ make
 ```
@@ -27,7 +27,7 @@ It is possible to compile each tool separately, using an appropriate
 `make` rule:
 
 ```
-$ git clone https://github.com/cicovic-andrija/virtual-risc-runtime.git
+$ git clone https://github.com/cicovic-andrija/risc-runtime.git
 $ mkdir -p ~/bin/
 $ make assembler
 $ make linker
@@ -38,7 +38,7 @@ This can also be accomplished by executing `make` command from
 within each tool's directory. For example, to build a linker, execute:
 
 ```
-$ git clone https://github.com/cicovic-andrija/virtual-risc-runtime.git
+$ git clone https://github.com/cicovic-andrija/risc-runtime.git
 $ cd linker/
 $ make
 ```
